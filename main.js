@@ -71,6 +71,8 @@ sendBtn.addEventListener("click", async (e) => {
     message: msg,
   });
   console.log("message was send");
+  messageInput.innerHTML = "";
+  messageInput.value = "";
 });
 
 // ! GET LIVE MESSAGES
