@@ -6,9 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
-  <body>
-    <main class="">
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+  <body class="bg-[#131313]">
+    <main class="app w-full p-2 md:p-8 flex flex-col justify-end min-h-screen">
+      <div class="text-center my-3 h-fit">
+        <p class="font-bold text-gray-200">
+          Refresh the page if something goes wrong
+        </p>
+        <p class="font-bold text-gray-200 mt-3">
+          Sorry penne, insta chathichu. athaa njan ee chat app pettanu indakiye.
+        </p>
+      </div>
+      <div
+        class="message-container bg-[#1f1f1f] p-2 rounded flex flex-col gap-y-2 text-white min-h-[300px] justify-end"
+      >
+        <p class="message" data-id="">
+          <span class="font-bold text-[#6e6e6e]">Mar 08, 23:47</span> Hello??
+        </p>
+      </div>
+      <div class="message-box mt-4 flex gap-x-2 h-fit">
+        <textarea
+          type="text"
+          class="message-input border-2 p-2 rounded outline-none resize-none w-full bg-[#1f1f1f] border-[#2e2e2e] text-white"
+          placeholder="Enter your message"
+        ></textarea>
+        <button
+          class="send-btn bg-violet-600 text-white font-bold px-4 rounded"
+        >
+          Send
+        </button>
+      </div>
     </main>
     <script type="module" src="/main.js"></script>
   </body>
